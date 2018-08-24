@@ -1,4 +1,5 @@
 class AuthorsController < ApplicationController
+  before action :set_authot, only: [:show, :edit, :update]
   def show
     @author = Author.find(params[:id])
   end
