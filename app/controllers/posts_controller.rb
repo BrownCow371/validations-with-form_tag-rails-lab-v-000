@@ -5,6 +5,8 @@ class PostsController < ApplicationController
   end
 
   def new
+    @post = Post.new
+
   end
 
   def create
@@ -22,6 +24,6 @@ private
   end
 
   def set_post
-    @author = Author.find(params[:id])
+    @post = Post.find(params[:id])
   end
 end
