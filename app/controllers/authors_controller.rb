@@ -1,5 +1,5 @@
 class AuthorsController < ApplicationController
-  before action :set_authot, only: [:show, :edit, :update]
+  before action :set_author, only: [:show, :edit, :update]
   def show
     end
 
