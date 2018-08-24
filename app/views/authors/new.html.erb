@@ -3,11 +3,11 @@
   <%if @author.errors.any?%>
     <div class="error_explanation">
       <h2>There were some errors:</h2>
-      <ul>
+      <ol>
         <%@author.errors.full_messages.each do |msg|%>
           <li><%=msg%></li>
         <%end%>
-      </ul>
+      </ol>
     </div>
   <%end%>
 
